@@ -76,7 +76,7 @@ namespace DNDCharaRandomizer
             subRaceTxt.Clear();
             featOrFlawTxt.Clear();
 
-            raceTxt.Text = races[RandomNumber(0,17)];
+            raceTxt.Text = races[RandomNumber(0, 17)];
             classTxt.Text = classes[RandomNumber(0, 14)];
             featOrFlawTxt.Text = featOrFlaw[RandomNumber(0, 13)];
 
@@ -90,7 +90,7 @@ namespace DNDCharaRandomizer
             }
             else if (raceTxt.Text == "Elf")
             {
-                subRaceTxt.Text = elfSub[RandomNumber(0, 14)];   //adjust max num
+                subRaceTxt.Text = elfSub[RandomNumber(0, 13)];   //adjust max num
             }
             else if (raceTxt.Text == "Gnome")
             {
@@ -149,29 +149,6 @@ namespace DNDCharaRandomizer
                 subRaceTxt.Text = tabaxiSub[RandomNumber(0, 5)];   //adjust max num
             }
 
-        }
-
-        private void randomStatsBtn_Click(object sender, EventArgs e)
-        {
-            strTxt.Clear();
-            strLbl.Text = "";
-            dexTxt.Clear();
-            dexLbl.Text = "";
-            conTxt.Clear();
-            conLbl.Text = "";
-            intTxt.Clear();
-            intLbl.Text = "";
-            wisTxt.Clear();
-            wisLbl.Text = "";
-            charTxt.Clear();
-            chrLbl.Text = "";
-
-            strTxt.Text = GetDiceTotal().ToString();
-            dexTxt.Text = GetDiceTotal().ToString();
-            conTxt.Text = GetDiceTotal().ToString();
-            intTxt.Text = GetDiceTotal().ToString();
-            wisTxt.Text = GetDiceTotal().ToString();
-            charTxt.Text = GetDiceTotal().ToString();
             if (classTxt.Text == "Barbarian")   //done
             {
                 strLbl.Text = "Very High";
@@ -299,6 +276,30 @@ namespace DNDCharaRandomizer
                 chrLbl.Text = "Low";
             }
 
+        }
+
+        private void randomStatsBtn_Click(object sender, EventArgs e)
+        {
+            strTxt.Clear();
+            strLbl.Text = "";
+            dexTxt.Clear();
+            dexLbl.Text = "";
+            conTxt.Clear();
+            conLbl.Text = "";
+            intTxt.Clear();
+            intLbl.Text = "";
+            wisTxt.Clear();
+            wisLbl.Text = "";
+            charTxt.Clear();
+            chrLbl.Text = "";
+
+            strTxt.Text = GetDiceTotal().ToString();
+            dexTxt.Text = GetDiceTotal().ToString();
+            conTxt.Text = GetDiceTotal().ToString();
+            intTxt.Text = GetDiceTotal().ToString();
+            wisTxt.Text = GetDiceTotal().ToString();
+            charTxt.Text = GetDiceTotal().ToString();
+            
         }
         public Form1()
         {

@@ -51,6 +51,13 @@ namespace DNDCharaRandomizer
             this.label8 = new System.Windows.Forms.Label();
             this.featOrFlawTxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.strLbl = new System.Windows.Forms.Label();
+            this.dexLbl = new System.Windows.Forms.Label();
+            this.conLbl = new System.Windows.Forms.Label();
+            this.intLbl = new System.Windows.Forms.Label();
+            this.wisLbl = new System.Windows.Forms.Label();
+            this.chrLbl = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // classTxt
@@ -177,7 +184,7 @@ namespace DNDCharaRandomizer
             // 
             // randomStatsBtn
             // 
-            this.randomStatsBtn.Location = new System.Drawing.Point(488, 92);
+            this.randomStatsBtn.Location = new System.Drawing.Point(488, 101);
             this.randomStatsBtn.Name = "randomStatsBtn";
             this.randomStatsBtn.Size = new System.Drawing.Size(75, 36);
             this.randomStatsBtn.TabIndex = 17;
@@ -235,11 +242,75 @@ namespace DNDCharaRandomizer
             this.label10.TabIndex = 23;
             this.label10.Text = "Your random flaw or feature:";
             // 
+            // strLbl
+            // 
+            this.strLbl.AutoSize = true;
+            this.strLbl.Location = new System.Drawing.Point(349, 74);
+            this.strLbl.Name = "strLbl";
+            this.strLbl.Size = new System.Drawing.Size(0, 13);
+            this.strLbl.TabIndex = 24;
+            // 
+            // dexLbl
+            // 
+            this.dexLbl.AutoSize = true;
+            this.dexLbl.Location = new System.Drawing.Point(406, 74);
+            this.dexLbl.Name = "dexLbl";
+            this.dexLbl.Size = new System.Drawing.Size(0, 13);
+            this.dexLbl.TabIndex = 25;
+            // 
+            // conLbl
+            // 
+            this.conLbl.AutoSize = true;
+            this.conLbl.Location = new System.Drawing.Point(470, 74);
+            this.conLbl.Name = "conLbl";
+            this.conLbl.Size = new System.Drawing.Size(0, 13);
+            this.conLbl.TabIndex = 26;
+            // 
+            // intLbl
+            // 
+            this.intLbl.AutoSize = true;
+            this.intLbl.Location = new System.Drawing.Point(532, 74);
+            this.intLbl.Name = "intLbl";
+            this.intLbl.Size = new System.Drawing.Size(0, 13);
+            this.intLbl.TabIndex = 27;
+            // 
+            // wisLbl
+            // 
+            this.wisLbl.AutoSize = true;
+            this.wisLbl.Location = new System.Drawing.Point(595, 74);
+            this.wisLbl.Name = "wisLbl";
+            this.wisLbl.Size = new System.Drawing.Size(0, 13);
+            this.wisLbl.TabIndex = 28;
+            // 
+            // chrLbl
+            // 
+            this.chrLbl.AutoSize = true;
+            this.chrLbl.Location = new System.Drawing.Point(659, 74);
+            this.chrLbl.Name = "chrLbl";
+            this.chrLbl.Size = new System.Drawing.Size(0, 13);
+            this.chrLbl.TabIndex = 29;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(351, 101);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(101, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Level of Importance";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 255);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.chrLbl);
+            this.Controls.Add(this.wisLbl);
+            this.Controls.Add(this.intLbl);
+            this.Controls.Add(this.conLbl);
+            this.Controls.Add(this.dexLbl);
+            this.Controls.Add(this.strLbl);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.featOrFlawTxt);
             this.Controls.Add(this.label8);
@@ -264,6 +335,7 @@ namespace DNDCharaRandomizer
             this.Controls.Add(this.classTxt);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,6 +365,13 @@ namespace DNDCharaRandomizer
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox featOrFlawTxt;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label strLbl;
+        private System.Windows.Forms.Label dexLbl;
+        private System.Windows.Forms.Label conLbl;
+        private System.Windows.Forms.Label intLbl;
+        private System.Windows.Forms.Label wisLbl;
+        private System.Windows.Forms.Label chrLbl;
+        private System.Windows.Forms.Label label11;
     }
 }
 

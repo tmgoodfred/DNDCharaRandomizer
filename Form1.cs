@@ -154,11 +154,17 @@ namespace DNDCharaRandomizer
         private void randomStatsBtn_Click(object sender, EventArgs e)
         {
             strTxt.Clear();
+            strLbl.Text = "";
             dexTxt.Clear();
+            dexLbl.Text = "";
             conTxt.Clear();
+            conLbl.Text = "";
             intTxt.Clear();
+            intLbl.Text = "";
             wisTxt.Clear();
+            wisLbl.Text = "";
             charTxt.Clear();
+            chrLbl.Text = "";
 
             strTxt.Text = GetDiceTotal().ToString();
             dexTxt.Text = GetDiceTotal().ToString();
@@ -166,11 +172,142 @@ namespace DNDCharaRandomizer
             intTxt.Text = GetDiceTotal().ToString();
             wisTxt.Text = GetDiceTotal().ToString();
             charTxt.Text = GetDiceTotal().ToString();
+            if (classTxt.Text == "Barbarian")   //done
+            {
+                strLbl.Text = "Very High";
+                dexLbl.Text = "Medium";
+                conLbl.Text = "Very High";
+                intLbl.Text = "Low";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Medium";
+            }
+            else if (classTxt.Text == "Bard")   //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Very High";
+            }
+            else if (classTxt.Text == "Cleric") //done
+            {
+                strLbl.Text = "Medium";
+                dexLbl.Text = "Medium";
+                conLbl.Text = "High";
+                intLbl.Text = "Low";
+                wisLbl.Text = "Very High";
+                chrLbl.Text = "Medium";
+            }
+            else if (classTxt.Text == "Druid")  //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "Very High";
+                chrLbl.Text = "Low";
+            }
+            else if (classTxt.Text == "Fighter")    //done
+            {
+                strLbl.Text = "Very High";
+                dexLbl.Text = "Low";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Medium";
+            }
+            else if (classTxt.Text == "Monk")   //done
+            {
+                strLbl.Text = "Medium";
+                dexLbl.Text = "Very High";
+                conLbl.Text = "High";
+                intLbl.Text = "Low";
+                wisLbl.Text = "High";
+                chrLbl.Text = "Low";
+            }
+            else if (classTxt.Text == "Paladin")    //done  
+            {
+                strLbl.Text = "Very High";
+                dexLbl.Text = "Low";
+                conLbl.Text = "High";
+                intLbl.Text = "Low";
+                wisLbl.Text = "Low";
+                chrLbl.Text = "Very High";
+            }
+            else if (classTxt.Text == "Ranger") //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "Very High";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "High";
+                chrLbl.Text = "Low";
+            }
+            else if (classTxt.Text == "Rogue")  //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "Very High";
+                conLbl.Text = "High";
+                intLbl.Text = "High";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Medium";
+            }
+            else if (classTxt.Text == "Sorcerer")   //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Very High";
+            }
+            else if (classTxt.Text == "Warlock")    //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Medium";
+                wisLbl.Text = "Low";
+                chrLbl.Text = "Very High";
+            }
+            else if (classTxt.Text == "Wizard") //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Very High";
+                wisLbl.Text = "Medium";
+                chrLbl.Text = "Low";
+            }
+            else if (classTxt.Text == "Artificer")  //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "High";
+                conLbl.Text = "High";
+                intLbl.Text = "Very High";
+                wisLbl.Text = "Low";
+                chrLbl.Text = "Low";
+            }
+            else if (classTxt.Text == "Bloodhunter")    //done
+            {
+                strLbl.Text = "Low";
+                dexLbl.Text = "Very High";
+                conLbl.Text = "High";
+                intLbl.Text = "Low";
+                wisLbl.Text = "High";
+                chrLbl.Text = "Low";
+            }
 
         }
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

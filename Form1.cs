@@ -41,7 +41,7 @@ namespace DNDCharaRandomizer
         }; //13
 
         private readonly Random randNum = new Random();
-
+        //adding temp comment
         public int RandomNumber(int min, int max)
         {
             return randNum.Next(min, max);

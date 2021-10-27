@@ -75,6 +75,12 @@ namespace DNDCharaRandomizer
             classTxt.Clear();
             subRaceTxt.Clear();
             featOrFlawTxt.Clear();
+            strLbl.Text = "";
+            conLbl.Text = "";
+            dexLbl.Text = "";
+            wisLbl.Text = "";
+            intLbl.Text = "";
+            chrLbl.Text = "";
 
             raceTxt.Text = races[RandomNumber(0, 17)];
             classTxt.Text = classes[RandomNumber(0, 14)];
@@ -188,11 +194,11 @@ namespace DNDCharaRandomizer
             else if (classTxt.Text == "Fighter")    //done
             {
                 strLbl.Text = "Very High";
-                dexLbl.Text = "Low";
+                dexLbl.Text = "Medium/High";
                 conLbl.Text = "High";
-                intLbl.Text = "Medium";
-                wisLbl.Text = "Medium";
-                chrLbl.Text = "Medium";
+                intLbl.Text = "Low";
+                wisLbl.Text = "Low/Medium";
+                chrLbl.Text = "Low";
             }
             else if (classTxt.Text == "Monk")   //done
             {
@@ -281,17 +287,11 @@ namespace DNDCharaRandomizer
         private void randomStatsBtn_Click(object sender, EventArgs e)
         {
             strTxt.Clear();
-            strLbl.Text = "";
             dexTxt.Clear();
-            dexLbl.Text = "";
             conTxt.Clear();
-            conLbl.Text = "";
             intTxt.Clear();
-            intLbl.Text = "";
             wisTxt.Clear();
-            wisLbl.Text = "";
             charTxt.Clear();
-            chrLbl.Text = "";
 
             strTxt.Text = GetDiceTotal().ToString();
             dexTxt.Text = GetDiceTotal().ToString();
